@@ -1,0 +1,1 @@
+# no-setting-array-properties-rule

@@ -1,13 +1,17 @@
 {
   "name": "no-setting-array-properties-rule",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "TSLint rule which forbids setting array properties, because they aren't handled by JSON.stringify.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leroydev/no-setting-array-properties-rule"
   },
   "author": "Leroy Witteveen",
-  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leroydev/no-setting-array-properties-rule/issues"
+  },
+  "main": "tslint.json",
+  "license": "MIT",
   "devDependencies": {
     "tslint": "^5.7.0",
     "typescript": "^2.5.3"

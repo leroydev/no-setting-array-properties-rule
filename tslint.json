@@ -3,7 +3,7 @@
     "extends": [
         "tslint:recommended"
     ],
-    "rulesDirectory": ["./rules"],
+    "rulesDirectory": ["./dist/src"],
     "rules": {
         "max-classes-per-file": false,
         "no-string-literal": false,

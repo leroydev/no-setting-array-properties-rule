@@ -1,6 +1,6 @@
 {
   "name": "no-setting-array-properties-rule",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "TSLint rule which forbids setting array properties, because they aren't handled by JSON.stringify.",
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   },
   "dependencies": {
     "tsutils": "^2.12.1"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }

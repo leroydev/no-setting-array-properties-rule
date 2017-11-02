@@ -1,5 +1,6 @@
 let arr: number[] = [];
 let obj = {};
+let anyVar: any = {};
 const str: string = "str";
 const num = 2;
 
@@ -20,3 +21,9 @@ obj["bla"] = "1";
 
 // Object string variable should be allowed
 obj[str] = "1";
+
+// Any string literal should be allowed
+anyVar["bla"] = "1";
+
+// Any string variable should be allowed
+anyVar[str] = "1";

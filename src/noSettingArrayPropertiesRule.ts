@@ -50,12 +50,13 @@ class Walker extends Lint.AbstractWalker<void> {
                 return false;
             }
 
-            if (this.checker.getTypeAtLocation(node.expression).symbol.name !== "Array") {
+            const expressionType = this.checker.getTypeAtLocation(node.expression);
+            if (expressionType.symbol === undefined || expressionType.symbol.name !== "Array") {
                 return false;
             }
 
-            const type = this.checker.getTypeAtLocation(argument);
-            if (isStringLiteralPropertyAccess(argument) || isStringVariable(type)) {
+            const argumentExpressionType = this.checker.getTypeAtLocation(argument);
+            if (isStringLiteralPropertyAccess(argument) || isStringVariable(argumentExpressionType)) {
                 return true;
             }
         }
